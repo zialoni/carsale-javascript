@@ -134,8 +134,14 @@ function displayMenuButtons() {
       return `<button type="button" class="filter-btn" data-id=${category}>
           ${category}
         </button>`;
+
+      /*
+      return `<option>  data-id=${category}>
+        ${category} 
+      </option>`;*/
     })
     .join("");
+  console.log(categories);
 
   btnContainer.innerHTML = categoryBtns;
   const filterBtns = btnContainer.querySelectorAll(".filter-btn");

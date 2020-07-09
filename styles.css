@@ -181,7 +181,11 @@ main {
 Menu
 ===============
 */
-
+select {
+  width: 120px;
+  z-index: 1;
+  color: white;
+}
 .menu {
   padding: 5rem 0;
 }
@@ -199,9 +203,12 @@ Menu
 }
 
 .btn-container {
-  margin-bottom: 4rem;
   display: flex;
-  justify-content: center;
+  align-items: center;
+
+  height: 50px;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 .filter-btn {
   background: transparent;
